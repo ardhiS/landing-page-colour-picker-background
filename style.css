@@ -81,6 +81,7 @@ h6 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
+  width: 100%;
 }
 .s2 {
   background-color: var(--secondaryColor);
@@ -89,7 +90,7 @@ h6 {
 }
 
 .main-container {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -101,6 +102,7 @@ h6 {
 }
 
 .intro-wrapper {
+  width: 100%;
   background-color: var(--secondaryColor);
   border-color: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
@@ -409,11 +411,20 @@ h6 {
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    width: 95%;
+    width: 80%;
+  }
+  .right-column {
+    margin-right: 90px;
+  }
+  .nav-wrapper {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .main-container {
+    width: 95%;
+  }
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -421,11 +432,14 @@ h6 {
       "left-wrapper"
       "right-wrapper";
   }
-
+  .nav-wrapper {
+    width: 90%;
+  }
   .right-column {
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -10px;
     margin-bottom: 40px;
+    margin-left: -60px;
   }
 
   #social-img {
